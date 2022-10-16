@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    background-color: black;
+}
+
+.navbar {
+    width: 85%;
+    height: 10px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo {
+    height: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.img-container {
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: 120%;
+}
+
+.img-container h1 {
+    font-size: 2rem;
+    position: absolute;
+    color: rgb(11, 208, 47);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px black;
+
+}
+
+.p-container{
+    padding: 30px 30px;
+    text-align: justify;
+    color: aliceblue;
+
+}
+
+.perfil-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+.doh img, .galar img {
+    width: 250px;
+    height: auto;
+}
+
+.equip-container {
+    padding: 10px 10px;
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+
+.equip-container img{
+    width: 300px;
+    height: auto;
+}
+
+.equip-container p{
+    color: antiquewhite;
+    text-align: justify;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(255, 231, 233, 0.518);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 15px rgb(255, 255, 255);
+}
+
+.container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h3 {
+    font-weight: 600;
+    color: antiquewhite;
+    margin: 10px;
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    color: antiquewhite;
+}
+
+.form {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.form h2 {
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+}
+
+.submit {
+    background-color: green;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 10px;
+    color: aliceblue;
+    text-align: center;
+    margin: 70px;
+}
