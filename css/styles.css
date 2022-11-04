@@ -1,288 +1,259 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sen&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sen&display=swap");
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 120px;
+  }
+  .form {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .logo {
+    width: 160px;
+    margin-left: 10px;
+  }
+  .form {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 992px) {
+  .logo {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .form {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logo {
+    width: 220px;
+    margin-left: 40px;
+  }
+  .nav-item {
+    padding: 15px;
+  }
+  .nav-item:hover {
+    transform: scale(1.02);
+    text-shadow: 0px 0px 4px rgb(204, 156, 0);
+    transition: 0.3s;
+  }
+  .form {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-item:hover {
+    text-shadow: 0px 0px 4px rgb(204, 156, 0);
+    transition: 0.3s;
+  }
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    min-width: 300px;
-    background-color: #111 !important;
-    letter-spacing: 0.6px;
-    
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  min-width: 300px;
+  background-color: #111 !important;
+  letter-spacing: 0.6px;
 }
 
 /* NAVBAR */
-
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 120px;
-    }
-
-}
-
-@media screen and (min-width: 480px) and (max-width: 780px) {
-    .logo {
-        width: 160px;
-        margin-left: 10px;
-    }
-
-}
-
-
-@media screen and (min-width: 780px) and (max-width: 992px) {
-    .logo {
-        width: 200px;
-        margin-left: 20px;
-
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .logo {
-        width: 220px;
-        margin-left: 40px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .nav-item {
-        padding: 15px;
-    }
-    
-    .nav-item:hover {
-        transform: scale(1.02);
-        text-shadow: 0px 0px 4px rgb(204, 156, 0);
-        transition: 0.3s;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    
-    .nav-item:hover {
-        text-shadow: 0px 0px 4px rgb(204, 156, 0);
-        transition: 0.3s;
-    }
-}
-
 .navbar {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 .ms-auto {
-    margin-right: 100px;
+  margin-right: 100px;
 }
-
 
 /* FIN NAVBAR */
-
 /* BANNER */
-
 .img-container {
-    width: 100%;
-    max-height: 510px;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  max-height: 510px;
+  overflow: hidden;
+  position: relative;
 }
-
 .img-container img {
-    width: 100%;
+  width: 100%;
 }
-
 .img-container h1 {
-    position: absolute;
-    color: rgb(243, 186, 0);
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 3px 3px 2px black;
+  position: absolute;
+  color: rgb(243, 186, 0);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px 2px black;
 }
 
 /* FIN BANNER */
-
 /* INDEX */
-
-.p-container{
-    padding: 30px 30px;
-    text-align: justify;
-    color: aliceblue;
-
+.p-container {
+  padding: 30px 30px;
+  text-align: justify;
+  color: aliceblue;
 }
 
 /* FIN INDEX */
-
 /* NOSOTROS */
+.perfil-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
 
-.perfil-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
+.doh img,
+.galar img {
+  width: 250px;
+  height: auto;
 }
 
 /* FIN NOSOTROS */
-
-.doh img, .galar img {
-    width: 250px;
-    height: auto;
-}
-
 /* EQUIPAMIENTO */
-
 h2 {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin: 0%;
-    text-shadow: 0px 0px 5px rgb(204, 156, 0);
-
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0%;
+  text-shadow: 0px 0px 5px rgb(204, 156, 0);
 }
 
 .nleft {
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    filter: brightness(90%);
-    transition: 0.2s;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  filter: brightness(90%);
+  transition: 0.2s;
 }
-
 .nleft:hover {
-    filter: brightness(110%);
-    cursor: pointer;
+  filter: brightness(110%);
+  cursor: pointer;
 }
 
 .row h3 {
-    color: #fff;
-    text-align: center;
-    margin-top: 60px;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
 }
-
 .row p {
-    color: #fff;
-    text-align: justify;
-    margin: 40px 20px 20px 30px;
+  color: #fff;
+  text-align: justify;
+  margin: 40px 20px 20px 30px;
 }
 
 .preamp {
-    background-image: url(../img/preamp.jpeg);
+  background-image: url(../img/preamp.jpeg);
 }
 
 .mic {
-    background-image: url(../img/microfonos.jpeg);
+  background-image: url(../img/microfonos.jpeg);
 }
 
 .inst {
-    background-image: url(../img/instrumentos.jpeg);
+  background-image: url(../img/instrumentos.jpeg);
 }
 
-.nleft, .nright {
-    border: 1px solid rgba(255, 196, 0, 0.786);
+.nleft,
+.nright {
+  border: 1px solid rgba(255, 196, 0, 0.786);
 }
 
 /* FIN EQUIPAMIENTO */
-
 /* SERVICIOS */
-
 .card-container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
 }
-
 .card-container .card {
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(255, 231, 233, 0.518);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-    background-color: #111;
-
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(255, 231, 233, 0.518);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: #111;
 }
-
-.card-container .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 4px 15px rgb(255, 255, 255);
-}
-
 .card-container .card img {
-    height: 190px;
-    
+  height: 190px;
 }
-
 .card-container .card h3 {
-    font-weight: 600;
-    color: antiquewhite;
-    margin: 30px 10px 10px 10px;
+  font-weight: 600;
+  color: antiquewhite;
+  margin: 30px 10px 10px 10px;
 }
-
 .card-container .card p {
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: justify;
-    color: antiquewhite;
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  color: antiquewhite;
+}
+.card-container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 4px 15px rgb(255, 255, 255);
 }
 
 /* FIN SERVICIOS */
-
 /* CONTACTO */
-
 .form {
-    width: 500px;
-    height: 450px;
-    margin: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 30px;
+  height: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
 }
 
-input, textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
 }
 
 textarea {
-    height: 200px;
-    width: 100%;
-    resize: none;
+  height: 200px;
+  width: 100%;
+  resize: none;
 }
 
 .submit {
-    background-color: rgba(204, 156, 0, 0.916);
-    color: aliceblue;
-    padding: 20px;
-    margin-bottom: 0;
+  background-color: rgba(204, 156, 0, 0.916);
+  color: aliceblue;
+  padding: 20px;
+  margin-bottom: 0;
 }
-
 .submit:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* FIN CONTACTO */
-
 /* FOOTER */
-
 footer p {
-    font-size: 12px;
-    color: aliceblue;
-    text-align: center;
-    margin: 50px;
+  font-size: 12px;
+  color: aliceblue;
+  text-align: center;
+  margin: 50px;
 }
 
 /* FIN FOOTER */
+
+/*# sourceMappingURL=styles.css.map */
