@@ -1,3 +1,11 @@
+$color2: rgb(255, 187, 0);
+
+@mixin hoverfx($time) {
+    transform: $time;
+    text-shadow: 0px 1px 4px $color2;
+    transition: 0.4s;
+}
+
 @media screen and (max-width: 480px) {
     .logo {
         width: 120px;
@@ -40,9 +48,7 @@
         padding: 15px;
 
         &:hover {
-            transform: scale(1.02);
-            text-shadow: 0px 0px 4px rgb(204, 156, 0);
-            transition: 0.3s;
+            @include hoverfx(scale(1.05));
         }
     }
 
@@ -53,7 +59,6 @@
 
 @media screen and (max-width: 992px) {
     .nav-item:hover {
-        text-shadow: 0px 0px 4px rgb(204, 156, 0);
-        transition: 0.3s;
+        @include hoverfx(scale(1.003));
     }
 }
